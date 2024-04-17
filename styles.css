@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 75px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+
+#nav-bar {
+  width: 80%;
+}
+
+.meaty-cheesy-logo {
+  width: 20%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+#header img {
+  height: 75px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 85px auto 0;
+}
+
+.container > button {
+  width: 100%;
+  height: 45px;
+  border: 1px #000000 solid;
+  background-color: #DDDDDD;
+  cursor: pointer;
+}
+
+.container > button a {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.container > button a i {
+  color: #FF0000;
+}
+
+#price {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.coal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid #000000;
+  border-radius: 3px;
+}
+
+.coal:first-child {
+  margin-left: 0;
+}
+
+.coal:last-child {
+  margin-right: 0;
+}
+
+.coal .brand {
+  background-color: #DDDDDD;
+  color: #000000;
+  padding: 15px 0;
+  width: 100%;
+  font-weight: 700;
+}
+
+.coal h2 {
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.coal img {
+  width: 100%;
+  border: 1px solid #000000;
+  border-left: none;
+  border-right: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.coal button {
+  width: 100%;
+  height: 35px;
+  border: 0;
+  background-color: #F1C40F;
+  font-weight: 400;
+}
+
+.coal button:hover {
+  background-color: orange;
+}
+
+#which-one-should-i-choose {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto 20px;
+  max-width: 1000px;
+  height: 550px;
+}
+
+.gladness > div {
+  justify-content: center;
+  display: flex;
+}
+
+.gladness i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  height: 125px;
+}
+
+.gladness .gladness-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  padding: 5px;
+}
+
+.gladness-text h2 {
+  margin-top: -5px;
+}
+
+.gladness-text p {
+  margin-top: 5px;
+}
+
+#news-subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+}
+
+#news-subscribe h2 {
+  margin-bottom: 20px;
+}
+
+#email {
+  width: 100%;
+  max-width: 275px;
+  padding: 5px;
+}
+
+#submit {
+  width: 100%;
+  max-width: 200px;
+  height: 40px;
+  margin: 15px 0;
+  padding: 0 20px;
+  border: 0;
+  font-size: 1em;
+  font-weight: 900;
+  background-color: #F1C40F;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: orange;
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #DDDDDD;
+  padding: 20px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul li {
+  padding: 0 10px;
+}
+
+footer span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #404040;
+}
+
+@media (max-width: 820px) {
+  #header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .meaty-cheesy-logo {
+    width: 75px;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  li {
+    line-height: 2;
+  }
+  .container {
+    margin: 210px auto 0;
+  }
+  #which-one-should-i-choose {
+    height: 400px;
+  }
+}
+
+@media (max-width: 715px) {
+  .coal .brand {
+    height: 68px;
+  }
+}
