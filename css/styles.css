@@ -4,7 +4,13 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
+}
+
 body {
+  min-width: 550px;
   background-color: #FFFFFF;
   font-family: 'Roboto', sans-serif;
 }
@@ -33,7 +39,6 @@ nav ul {
   display: flex;
   justify-content: space-evenly;
   font-size: 1.25rem;
-  font-weight: 400;
 }
 
 li {
@@ -64,7 +69,6 @@ a {
 
 .container > button a {
   font-size: 1.25rem;
-  font-weight: 400;
 }
 
 .container > button a i {
@@ -102,6 +106,7 @@ a {
   color: #000000;
   padding: 15px 0;
   width: 100%;
+  font-family: "Roboto";
   font-weight: 700;
 }
 
@@ -125,7 +130,6 @@ a {
   height: 35px;
   border: 0;
   background-color: #F1C40F;
-  font-weight: 400;
 }
 
 .coal button:hover {
@@ -157,6 +161,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 410px;
   height: 125px;
   padding: 5px;
 }
