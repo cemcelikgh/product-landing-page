@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-padding-top: 99px;
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: 'Roboto';
   src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
@@ -235,6 +240,9 @@ footer span {
 }
 
 @media (max-width: 820px) {
+  html {
+    scroll-padding-top: 219px;
+  }
   #header {
     flex-direction: column;
     align-items: center;
